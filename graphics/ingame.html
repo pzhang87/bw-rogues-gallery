@@ -24,6 +24,7 @@
     #scoreboard {
       position: absolute;
       top: 640px;
+      left: 6px;
       color: white;
     }
 
@@ -35,9 +36,6 @@
       position: relative;
       font-weight: bold;
       font-size: 24px;
-    }
-
-    #top > div {
       width: 310px;
     }
 
@@ -55,7 +53,7 @@
     }
 
     #mid > div {
-      width: 60px;
+      width: 140px;
       margin: 6px;
     }
 
@@ -67,7 +65,8 @@
 
     #player1_spawn {
       position: relative;
-      text-align: right;
+      text-align: left;
+      top: 10px;
     }
 
     #player2_name {
@@ -78,12 +77,13 @@
 
     #player2_spawn {
       position: relative;
-      text-align: left;
+      text-align: right;
+      top: 10px;
     }
 
     #bottom {
       position: relative;
-      top: 30px;
+      top: 24px;
     }
 
     .scorearea {
@@ -93,6 +93,8 @@
     }
 
     .spawn {
+      padding: 6px;
+      width: 45px;
       font-size: 16px;
       font-family: ErasBoldITC, sans-serif;
     }
@@ -124,14 +126,13 @@
 
   <div id="scoreboard">
     <div id="top">
+      <div id="player1_spawn" class="spawn"></div>
       <div id="map"></div>
+      <div id="player2_spawn" class="spawn"></div>
     </div>
 
   <div id="mid">
     <div id="player1_name"></div>
-    <div id="player1_spawn" class="spawn"></div>
-
-    <div id="player2_spawn" class="spawn"></div>
     <div id="player2_name"></div>
   </div>
 
